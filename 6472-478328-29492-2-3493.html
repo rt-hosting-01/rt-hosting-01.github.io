@@ -1,1 +1,133 @@
-<h1> welcome </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All About Cats</title>
+  <style>
+    :root {
+      --main-color: #4b2e83;
+      --accent-color: #f5a623;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--main-color);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://placekitten.com/1200/500') no-repeat center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 6px #000;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .content {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about {
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>All About Cats</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>Discover the World of Cats</div>
+  </div>
+
+  <section class="content">
+    <div id="about" class="about">
+      <h2>About Cats</h2>
+      <p>
+        Cats are small, carnivorous mammals that are one of the most popular pets in the world.
+        Known for their agility, independence, and playful nature, cats have been companions to humans for thousands of years.
+        They come in many breeds, colors, and personalities—each as unique as their owners.
+      </p>
+    </div>
+
+    <div id="gallery" class="gallery">
+      <img src="https://placekitten.com/400/300" alt="Cute kitten 1" />
+      <img src="https://placekitten.com/401/300" alt="Cute kitten 2" />
+      <img src="https://placekitten.com/402/300" alt="Cute kitten 3" />
+      <img src="https://placekitten.com/403/300" alt="Cute kitten 4" />
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Cat Lovers United | Meow!
+  </footer>
+
+</body>
+</html>
